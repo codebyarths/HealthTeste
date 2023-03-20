@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.apresentacao{
+    padding: 5% 5%;
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacaoConteudo{
+    width:50%   ;
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.apresentacaoConteudoTitulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacaoConteudoTexto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.apresentacaoLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacaoSocial{
+    background-color: #22D4FD;
+    width: 45%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-model {
+    background-color: rgb(1, 5, 8);
+    width: 45%;
+    height: 35rem;
+    background-image: url(https://w7.pngwing.com/pngs/951/692/png-transparent-ayrton-senna-formula-1-drawing-formula-1-face-photography-head.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px 50px 200px 50px;
+    border: 5px solid #22D4FD;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+  }
+  .rodape{
+   color: #ffffff;
+    background-color:#22D4FD;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+  
+  @media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .apresentacaoConteudo{
+        width: auto;
+    }
+    .box-model{
+        width: 45%;
+        height: 30rem;
+    }
+}
+
+@media (max-width:850px){
+    .box-model{
+        width: 45%;
+        height: 10rem;
+    }
+    .apresentacaoSocial{
+        width: 10rem;
+    }
+}
+
